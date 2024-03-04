@@ -1,4 +1,5 @@
 name: Deploy demo
+run-name: Deploy production on branch ${{ github.head_ref }} merge 🚀
 on:
   push:
   # pull_request:
