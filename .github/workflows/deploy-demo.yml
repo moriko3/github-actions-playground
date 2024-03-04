@@ -1,11 +1,10 @@
 name: Deploy demo
 run-name: Deploy production on branch ${{ github.ref_name }} merge 🚀
 on:
-  push:
-  # pull_request:
-  #   branches:
-  #     - deploy/production
-  #   types: [closed]
+  pull_request:
+    branches:
+      - deploy/production
+    types: [closed]
 jobs:
   Deploy-Production:
     runs-on: ubuntu-latest
