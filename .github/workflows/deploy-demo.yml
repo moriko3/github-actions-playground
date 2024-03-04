@@ -11,12 +11,11 @@ jobs:
     runs-on: ubuntu-latest
     # if: github.event.pull_request.merged == true
     steps:
-      - run: |
-        echo '1' $GITHUB_REF
-        echo '2' ${{ github.ref }}
-        echo '3' ${{ github.ref_name }}
-        echo '4' ${{ github.head_ref }}
-        echo '5' ${{ github.base_ref }}
+      - run: echo '1' $GITHUB_REF
+      - run: echo '2' ${{ github.ref }}
+      - run: echo '3' ${{ github.ref_name }}
+      - run: echo '4' ${{ github.head_ref }}
+      - run: echo '5' ${{ github.base_ref }}
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
       - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
       - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
