@@ -1,9 +1,10 @@
 name: Deploy demo
 on:
-  pull_request:
-    branches:
-      - deploy/production
-    types: [closed]
+  push:
+  # pull_request:
+  #   branches:
+  #     - deploy/production
+  #   types: [closed]
 jobs:
   Fire only on deploy production branch:
     runs-on: ubuntu-latest
