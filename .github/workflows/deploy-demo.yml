@@ -5,7 +5,7 @@ on:
       - deploy/production
     types: [closed]
 jobs:
-  Fire only on deploy/production branch:
+  Fire only on deploy production branch:
     runs-on: ubuntu-latest
     if: github.event.pull_request.merged == true
     steps:
